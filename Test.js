@@ -2,8 +2,8 @@ var express = require('express'),
     app = express();
 
 var oauth2 = require('simple-oauth2')({
-  clientID: CLIENT_ID,
-  clientSecret: CLIENT_SECRET,
+  clientID: 229W2W,
+  clientSecret: aec0bda7f40a05926816596847e6daca,
   site: 'https://github.com/login',
   tokenPath: '/oauth/access_token',
   authorizationPath: '/oauth/authorize'
