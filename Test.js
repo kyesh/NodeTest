@@ -2,16 +2,16 @@ var express = require('express'),
     app = express();
 
 var oauth2 = require('simple-oauth2')({
-  clientID: "229W2W",
-  clientSecret: "aec0bda7f40a05926816596847e6daca",
-  site: 'https://github.com/login',
-  tokenPath: '/oauth/access_token',
-  authorizationPath: '/oauth/authorize'
+  clientID: '229W2W',
+  clientSecret: 'aec0bda7f40a05926816596847e6daca'
+  site: 'https://www.fitbit.com',
+  tokenPath: '/oauth2/token',
+  authorizationPath: '/oauth2/authorize'
 });
 
 // Authorization uri definition
 var authorization_uri = oauth2.authCode.authorizeURL({
-  redirect_uri: 'http://localhost:3000/callback',
+  redirect_uri: 'http://haikernode.cloudapp.net/callback',
   scope: 'notifications',
   state: '3(#0/!~'
 });
@@ -27,7 +27,7 @@ app.get('/callback', function (req, res) {
   console.log('/callback');
   oauth2.authCode.getToken({
     code: code,
-    redirect_uri: 'http://localhost:3000/callback'
+    redirect_uri: 'http://haikernode.cloudapp.net/callback'
   }, saveToken);
 
   function saveToken(error, result) {
