@@ -1,0 +1,125 @@
+	  #map {
+		  margin-top: 10px;
+		  width: 800px;
+		  height: 500px;
+		  float: left;
+		  margin-left: 10px;
+	  }
+	  .loc {
+		  /*font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;*/
+		  font-size: 1.5em;
+		  font-weight: bold;
+	  }
+	  text {
+		    font-family: Arial;
+		    font-size: 9pt;
+		}
+		.bold {
+			font-weight: bold;
+		}
+	  #line {
+        height: 1px;
+        color: gray;
+        width: 98.5%;
+        border-bottom: 1px gray solid;
+      }
+	  #line3 {
+        height: 2px;
+        color: gray;
+        width: 100%;
+        border-bottom: 1px gray solid;		  
+	  }
+	  #line2 {
+		margin-top: 5px;
+        height: 1px;
+        width: 100%;
+        border-bottom: 1px gray solid;
+      }
+	  #click {
+		  padding-top: 5px;
+	  }
+	  .image {
+		  margin-top: 10px;
+		  height: 250px;
+		  margin-bottom: 10px;
+		  /*width: 200px;*/
+	  }
+	  html {
+		  background: #00ABEB
+	  }
+	  .thickline {
+	    height: 10px;
+		margin-top: 5px;
+		border-bottom: 2px solid white;
+        background-color: #8EDBF7;
+	  }
+	  .title {
+		  
+		  margin-top: 10px;
+		  background-color: #00ABEB;
+		  padding-left: 10px;
+        font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+		font-weight: bold;
+		color: #FFFFFF;
+		font-size: 3em;
+		float: left;
+		border-bottom: 2px solid white;
+	  }
+	  .home {
+		  /*margin-top: 10px;*/
+		  float: right;
+		  border-radius: 0;
+		  background-color: none;
+		  border: 3px white solid;
+		  font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+		  margin-right: 20px;
+		  font-size: 1.2em;
+		  width: 120px;
+		  margin-top: 20px;
+		  font-weight: bold;
+	  }
+	  .ss{
+		  float: right;
+		  border-radius: 0;
+		  background-color: none;
+		  border: 3px white solid;
+		  font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+		  margin-right: 20px;
+		  font-size: 1.2em;
+		  width: 200px;
+		  margin-top: 20px;
+		  font-weight: bold;		  
+	  }
+	  .fitbitgraph {
+		  background-color: #E5E5E5;
+		  margin-right: 20px;
+		  float: right;
+		  margin-top: 10px;
+		  width: 510px;
+	  }
+	  .fitimage {
+		  margin-top: 10px;
+		  margin-left: 10px;
+		  margin-bottom: 10px;
+		  width: 40%;
+	  }
+        .axis path, .axis line
+        {
+            fill: none;
+            stroke: #777;
+            shape-rendering: crispEdges;
+        }
+        
+        .axis text
+        {
+            font-family: 'Arial';
+            font-size: 13px;
+        }
+        .tick
+        {
+            stroke-dasharray: 1, 2;
+        }
+        .bar
+        {
+            fill: FireBrick;
+        }
