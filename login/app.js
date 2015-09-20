@@ -3,8 +3,8 @@ var express = require('express')
   , util = require('util')
   , FitbitStrategy = require('passport-fitbit').Strategy;
 
-var FITBIT_CONSUMER_KEY = "--insert-fitbit-consumer-key-here--"
-var FITBIT_CONSUMER_SECRET = "--insert-fitbit-consumer-secret-here--";
+var FITBIT_CONSUMER_KEY = "4a7b542d48ca539566df0eb443272939"
+var FITBIT_CONSUMER_SECRET = "aec0bda7f40a05926816596847e6daca";
 
 
 // Passport session setup.
@@ -30,7 +30,7 @@ passport.deserializeUser(function(obj, done) {
 passport.use(new FitbitStrategy({
     consumerKey: FITBIT_CONSUMER_KEY,
     consumerSecret: FITBIT_CONSUMER_SECRET,
-    callbackURL: "http://127.0.0.1:3000/auth/fitbit/callback"
+    callbackURL: "http://http://haikernode.cloudapp.net/auth/fitbit/callback"
   },
   function(token, tokenSecret, profile, done) {
     // asynchronous verification, for effect...
@@ -108,7 +108,7 @@ app.get('/logout', function(req, res){
   res.redirect('/');
 });
 
-app.listen(3000);
+app.listen(8080);
 
 
 // Simple route middleware to ensure user is authenticated.
