@@ -1,4 +1,5 @@
 var express = require('express')
+  , http = require('http')
   , passport = require('passport')
   , util = require('util')
   , FitbitStrategy = require('passport-fitbit').Strategy;
@@ -48,7 +49,8 @@ passport.use(new FitbitStrategy({
 
 
 
-var app = express.createServer();
+var app = express(); 
+var server = http.createServer(app);
 
 // configure Express
 app.configure(function() {
