@@ -3,7 +3,7 @@ var express = require('express'),
 
 var oauth2 = require('simple-oauth2')({
   clientID: '229W2W',
-  clientSecret: 'aec0bda7f40a05926816596847e6daca'
+  clientSecret: 'aec0bda7f40a05926816596847e6daca',
   site: 'https://www.fitbit.com',
   tokenPath: '/oauth2/token',
   authorizationPath: '/oauth2/authorize'
