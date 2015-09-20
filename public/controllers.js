@@ -59,4 +59,8 @@ $(document).ready(function() {
                 url = './map.html';
                 document.location.href=url;
 		});
+					$("#homebut").click(function() {
+				url = './splash.html';
+                document.location.href=url;
+			});
 });
